@@ -41,15 +41,15 @@ body {
   color: #2e2f42;
   font-size: 40px;
   font-weight: 400;
-  line-height: 48px; /* 120% */
-  letter-spacing: 1.6px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
 }
 
 .label {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -73,8 +73,8 @@ body {
   color: #989898;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 [data-start] {
@@ -89,8 +89,8 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 [data-start]:hover {
@@ -101,4 +101,54 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
+}
+
+/* ===============Task 2================= */
+.form {
+  padding: 36px;
+}
+
+label:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+label:first-child > input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  width: 360px;
+  height: 64px;
+  flex-shrink: 0;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.form > button {
+  border-radius: 8px;
+  background: #4e75ff;
+  width: 360px;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 24px;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.form > button:hover {
+  background: #6c8cff;
 }

@@ -3,20 +3,13 @@ import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
-const btn = document.querySelector('button[type = "submit"]');
 const inputSeconds = document.querySelector('input[type = "number"]');
 const input = document.querySelectorAll('input[type= "radio"]');
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', hanleSubmit);
 
-function hanleSubmit() {
-  console.log('ok');
-}
-
-btn.addEventListener('click', handleClick);
-
-function handleClick(event) {
+function hanleSubmit(event) {
   event.preventDefault();
   let selectedValue;
   const inputSecondsValue = inputSeconds.value.trim();

@@ -42,7 +42,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     console.log(selectedDates[0]);
-    if (selectedDates[0] >= date) {
+    if (selectedDates[0] > date) {
       btn.disabled = false;
     } else {
       btn.disabled = true;
