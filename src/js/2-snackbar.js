@@ -38,12 +38,14 @@ function hanleSubmit(event) {
       iziToast.success({
         title: 'Fulfilled',
         message: data,
+        position: 'topRight',
       });
     })
     .catch(error => {
       iziToast.error({
         title: 'Rejected',
         message: error,
+        position: 'topRight',
       });
     });
 
